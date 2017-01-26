@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Validator</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header><p>JSON Validator</p></header>
+		<!-- component panel start -->
+		<div class="tabComponent" id="inputContent">
+
+			<!-- first tab -->
+			<div class="tabs">
+				<input type="radio" name="tabs" id="validate" value="validate" checked>
+				<label for="validate">Validate</label>
+
+				<div class="tabContent">
+					<form id="myForm" action="" method="post">
+						<textarea name="inputText" rows="8" cols="130" id="inputText" placeholder='{"key":"value"}'></textarea>
+						<div class="uploadWrapper">
+							<label for="fileupload">Upload File</label>
+							<input type="file" name="fileupload" value="fileupload" id="fileupload">
+						</div>
+						<input type="reset" name="clear" id="clear" value="Clear">
+						<input type="submit" name="validateButt" id="validateButt" value="Validate" class="floatRight">
+					</form>
+				</div>
+			</div>
+
+			<!-- second tab -->
+			<div class="tabs">
+				<input type="radio" name="tabs" id="result" value="result">
+				<label for="result">Result</label>
+
+				<div class="tabContent" id="resultContent">
+				</div>
+			</div>
+		</div>
+		<!-- component panel end -->
+		<footer>&copy; 2016 JSON Validator</footer>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

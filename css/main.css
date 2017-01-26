@@ -1,0 +1,161 @@
+/*------ External Fonts ------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%; /* 16px */
+	font-weight: 400;
+	color: #333;
+	background: #fff;
+}
+
+input, select, textarea, button {
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+	color: inherit;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+ /*------ Wrapper Styles ------*/
+
+.wrapper {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/*------ Header Styles ------*/
+
+header {
+	width: 100%;
+	background: #cc0000;
+	padding: 1em;
+}
+
+header p {
+	font-size: 1.5em;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+ .tabComponent {
+ 	position: relative;
+ 	margin-top: 25px;
+ }
+
+ .tabs {
+ 	float: left;
+ }
+
+ .tabs input[type="radio"] {
+ 	display: none;
+ }
+
+ .tabs > label {
+ 	position: relative;
+ 	padding: 10px 25px; 
+ 	left: 1px;
+ 	margin-left: 15px; 
+ 	background: #b3b3b3;
+ 	font-size: 1.1em;
+ 	cursor: pointer;
+ }
+
+ .tabs > label:hover {
+	color: #b3b3b3;
+	background: #333;
+ }
+
+ .tabContent {
+ 	position: absolute;
+ 	top: 31px;
+ 	left: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	padding: 1.5em;
+ 	border: 1px solid #ccc;
+ 	background: #fff;
+ 	height: 270px;
+ }
+
+ #validate ~ label {
+ 	margin-left: -1px;
+ }
+
+
+ .tabs input[type="radio"]:checked ~ label {
+ 	z-index: 3;
+ 	color: #b3b3b3;
+ 	background: #333;
+ }
+
+ .tabs input[type="radio"]:checked ~ label ~ .tabContent {
+ 	z-index: 2;
+ }
+
+textarea {
+	display: block;
+	border: 1px solid #bbb;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+input[type="reset"],
+input[type="submit"] {
+	background: #ccc;
+	cursor: pointer;
+	padding: 0.8em;
+	color: #656464;
+	border: 1px solid #bbb;
+	transition: background 0.5s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	color: #333;
+	background: #fff;
+}
+
+.uploadWrapper {
+	background: #ccc;
+	margin-right: 1em;
+	padding: 0.7em;
+	display: inline-block;
+	border: 1px solid #bbb;
+}
+
+
+
+
+ /*------ Footer Styles ------*/
+
+footer {
+	position: absolute;
+	width: 100%;
+	max-width: 1024px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	background: #ddd;
+	padding: 0.5em;
+	text-align: center;
+}
